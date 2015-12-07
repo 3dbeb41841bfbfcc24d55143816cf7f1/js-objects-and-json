@@ -7,9 +7,6 @@
 - Explain the difference between object properties and methods
 - Create empty objects and objects with multiple properties and methods using object literal syntax
 - Compare adding and retreiving properties to an existing object using the dot and bracket notations
-- Access properties of an object using keys and helper methods (.hasOwnProperty)
-- Iterate over the keys of an object to return and manipulate values
-- Identify the properties that are inherited by an object's prototype
 - Use the `new ` operator with one or more arguments to set initial properties on a newly-constrcuted object
 
 ### Preparation
@@ -51,14 +48,14 @@ A key can be either a name, a number or a string, the corresponding value to a k
 
 ## Creating Objects
 
-There are 4 different ways to create an object, but we're gonna focus on two today:
+There are several different ways to create an object, but we're gonna focus on two today:
 
 - Object Literals
 - Constructor Functions
 
-### Object Literals
+## Object Literals
 
-## Object Properties
+### Object Properties
 
 Objects in Javascript **always** have properties associated with them.
 
@@ -137,6 +134,13 @@ classroom
 => {name: "WDI ATL"}
 ```
 
+##JSON
+JSON stands for Javascript Object Notation. When using APIs, you'll generally be dealing with JSON data that's returned from your API calls.
+
+WE DO:
+Let's check out what's returned from [OMDBapi.com](http://www.omdbapi.com/).
+
+
 ## Object methods
 
 As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function become a `method`. Methods are defined the exact same way than a function, except that they have to be defined as the property of an object.
@@ -189,7 +193,7 @@ var meisha = {
 };
 ```
 
-That's *not* very DRY!!!
+That's *not* very DRY!!! We'll take a look at constructor functions after the break.
 
 
 ### EXERCISE YOU DO 
