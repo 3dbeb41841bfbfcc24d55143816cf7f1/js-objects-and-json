@@ -55,19 +55,24 @@ There are several different ways to create an object, but we're gonna focus on t
 
 ## Object Literals
 
-### Object Properties
-
-Objects in Javascript **always** have properties associated with them.
-
-You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using "dot notation":
+Example:
 
 ```javascript
 var diesel = {
   name: "Diesel",
   type: "Terrier",
-  age: 1
+  age: 1,
+  faveToys: ['ball', 'shoe']
 }
+```
 
+
+Objects in Javascript **always** have properties associated with them.
+
+You can think of a property on a JavaScript object as a type of variable that contains a value. The properties of an object can be accessed using "dot notation".
+
+
+```js
 diesel.name
 => "Diesel"
 ```
@@ -80,7 +85,7 @@ diesel.name
 => "Schmitty"
 ```
 
-## Creating an object with properties
+## Creating a `new Object()` with properties
 
 We are going to create an object `classroom` that contains properties `name` and `campus`:
 
@@ -100,23 +105,12 @@ classroom
 
 #### Bracket notation
 
-There is another way to set properties on a JavaScript object.
+There is another way to read, update and set properties on a JavaScript object.
 
 ```javascript
-classroom["name"]   = "WDI ATL";
-classroom["campus"] = "Atlanta";
-```
-
-This syntax can also be used to read properties of an object:
-
-```javascript
-console.log(classroom["name"]);
-=> "WDI ATL";
-
-var property = "campus";
-
-console.log(classroom[property]);
-=> "Atlanta";
+classroom["name"]     = "WDI ATL";
+classroom["campus"]   = "Ponce";
+classroom["students"] = 17;
 ```
 
 For more details see [MDN's Documentation on Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
@@ -125,16 +119,14 @@ For more details see [MDN's Documentation on Property Accessors](https://develop
 
 If you want to delete a property of an object (and by extension, the value attached to the property), you need to use the [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator:
 
-The following code shows how to remove a property:
-
 ```js
-var classroom = {name: "WDI ATL", campus: "Atlanta"};
+var classroom = {name: "WDI ATL", campus: "Ponce"};
 delete classroom.campus;
 classroom
 => {name: "WDI ATL"}
 ```
 
-##JSON
+##What's all this have to do with JSON?
 JSON stands for Javascript Object Notation. When using APIs, you'll generally be dealing with JSON data that's returned from your API calls.
 
 WE DO:
@@ -143,7 +135,7 @@ Let's check out what's returned from [OMDBapi.com](http://www.omdbapi.com/).
 
 ## Object methods
 
-As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function become a `method`. Methods are defined the exact same way than a function, except that they have to be defined as the property of an object.
+As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function becomes a `method`. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
 
 ```javascript
 var classroom = {
@@ -196,11 +188,11 @@ var meisha = {
 That's *not* very DRY!!! We'll take a look at constructor functions after the break.
 
 
-### EXERCISE YOU DO 
+### EXERCISE 
 
 Create 3 Javascript Object Literals that contain the following:
 
-- at least 3 different properties 
+- at least 3 different properties consisting of 3 different data types
 - a method that prints out a `String` using `this`
 
 **BREAK**
