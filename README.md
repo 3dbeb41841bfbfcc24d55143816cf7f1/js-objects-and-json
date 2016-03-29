@@ -3,10 +3,10 @@
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Compare objects and key-value stores to arrays as data structures
+- Compare JavaScript objects to JSON
 - Explain the difference between object properties and methods
-- Create empty objects and objects with multiple properties and methods using object literal syntax
-- Compare adding and retreiving properties to an existing object using the dot and bracket notations
+- Create objects using object literal syntax
+- Compare adding and retreiving properties using the dot and bracket notations
 - Use the `new ` operator with one or more arguments to set initial properties on a newly-constrcuted object
 
 ### Preparation
@@ -21,6 +21,8 @@ We have seen that we can _encapsulate_:
 * code via `functions`
 
 What if we want to _encapsulate_ both data and code into a single variable?
+
+![JavaScript Object]()
 
 Objects in JavaScript
 =====
@@ -188,7 +190,7 @@ var meisha = {
 That's *not* very DRY!!! We'll take a look at constructor functions after the break.
 
 
-### EXERCISE 
+### EXERCISE
 
 Create 3 Javascript Object Literals that contain the following:
 
@@ -367,6 +369,7 @@ console.log(snoopy.toString());
 
 We will use objects in JavaScript every day, and you will have plenty of time to practice creating and using objects in Javascript. There are a lot of resources available on the web for you to dive deeper, but the most detailed and understandable one is probably MDN.
 
-- [Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-- [Intro to Object Orientate Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
-- [Objects in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+* [Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+* [Intro to Object Oriented Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+* [Objects in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+* [Steve Jobs Tells the Best Definition of Object-Oriented Programming](http://fossbytes.com/steve-jobs-tells-the-best-definition-of-object-oriented-programming/)
