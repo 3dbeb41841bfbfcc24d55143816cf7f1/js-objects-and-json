@@ -22,7 +22,13 @@ We have seen that we can _encapsulate_:
 
 What if we want to _encapsulate_ both data and code into a single variable?
 
-![JavaScript Object]()
+### Encapsulation of Properties and Methods
+
+![Encapsulation of Properties and Methods](https://raw.githubusercontent.com/ATL-WDI-Curriculum/js-objects-and-json/master/images/object-property-method.jpg)
+
+### Abstraction via Encapsulation
+
+![Encapsulation Abstraction](https://raw.githubusercontent.com/ATL-WDI-Curriculum/js-objects-and-json/master/images/OOP-interface.png)
 
 Objects in JavaScript
 =====
